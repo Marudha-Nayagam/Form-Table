@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Submission </title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Form Submission</h1>
+    <div class="container">
+      <form action="" id="myForm">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="Enter First Name" />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Enter Last Name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email Id " />
+
+        <div class="gender-container">
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="Other" />
+          <label for="other">Other</label>
+        </div>
+
+        <div class="skills-container">
+          <label for="">Skills:</label>
+          <input type="checkbox" name="skills" id="html" value="HTML" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="skills" id="css" value="CSS" />
+          <label for="css">CSS</label>
+          <input
+            type="checkbox"
+            name="skills"
+            id="javascript"
+            value="JAVASCRIPT"
+          />
+          <label for="javascript">JAVASCRIPT</label>
+          <input type="checkbox" name="skills" id="reactjs" value="REACT JS" />
+          <label for="reactjs">REACT JS</label>
+          <input type="checkbox" name="skills" id="nodejs" value="NODE JS" />
+          <label for="nodejs">NODE JS</label>
+        </div>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="German">German</option>
+          <option value="Japan">Japan</option>
+        </select>
+
+        <div class="button-container">
+          <button type="button" onclick="submitForm()">Submit</button>
+          <button type="button" onclick="resetForm()">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>Skills</th>
+          <th>Comments</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Submitted data will be here :) :)  -->
+      </tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>

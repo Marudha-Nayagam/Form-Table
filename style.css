@@ -1,0 +1,78 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input, textarea, select, button {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+button{
+    border: none;
+    background-color: black;
+    border-radius: 16px;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+
+th,tr,td {
+    border-color: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: rgb(240, 114, 114);
+}
+
+th{
+    background-color: #08880d;
+    color: white;
+}
+textarea{
+    resize: vertical;
+}
+
+.gender-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.gender-container label{
+    margin-right: 10px;
+}
+
+.skills-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skills-container label{
+    margin-right: 10px;
+}
